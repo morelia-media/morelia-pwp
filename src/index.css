@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default.css";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+@theme {
+    --color-neutral-primary: var(--color-white);
+    --color-brand-softer: var(--color-blue-50);
+    --color-brand-soft: var(--color-blue-100);
+    --color-brand: var(--color-purple-500);
+    --color-brand-medium: var(--color-blue-200);
+    --color-brand-strong: var(--color-blue-800);
+
+    --color-fg-brand-subtle: var(--color-purple-500);
+    --color-fg-brand: var(--color-purple-500);
+    --color-fg-brand-strong: var(--color-purple-500);
+}
