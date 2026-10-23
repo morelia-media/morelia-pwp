@@ -61,21 +61,118 @@
 
 
 
-    <h1 class="text-heading tracking-tighter text-3xl md:text-5xl font-bold my-6">About Me</h1>
+    <h1 class="text-heading tracking-tighter text-3xl md:text-5xl font-bold my-6">
+        About Me
+    </h1>
 
-    <section class="bg-purple-200 py-16 rounded-2xl">
-        <div class="container mx-auto flex md:flex-row flex-col gap-16">
-            <div class="md:px-0 px-16">
-                <img src="https://placehold.co/600" alt="placeholder image">
+    <section class="bg-purple-200 rounded-2xl p-6 md:p-12">
+        <div class="max-w-6xl mx-auto">
+
+            <!-- Top row: portrait and introduction -->
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+
+                <img
+                        class="w-40 md:w-48 h-auto shrink-0 rounded-xl"
+                        src="documentation/about_me.PNG"
+                        alt="Morelia"
+                        height="778"
+                        width="359"
+                />
+
+                <div class="flex-1 min-w-0 text-left">
+                    <h2 class="text-2xl font-bold mb-4">
+                        Hi, I’m Morelia!
+                    </h2>
+
+                    <p class="mb-4 leading-relaxed">
+                        Growing up as the daughter of an entrepreneur, I was
+                        always helping with a family business—from sweeping
+                        the hair salon at ten to developing recipes for our
+                        paletería. Those experiences inspired me to help other
+                        small businesses bring their ideas to life.
+                    </p>
+
+                    <p class="leading-relaxed">
+                        Through Morelia Media LLC, I design websites, create
+                        social media content, and help set up point-of-sale
+                        systems.
+                        <strong>
+                            I enjoy working with business owners and making
+                            the technical side feel a little less overwhelming.
+                        </strong>
+                    </p>
+                </div>
+
             </div>
-            <div class="md:px-0 px-8">
-                <p data-pm-slice="1 1 []"><strong>Hi, I&rsquo;m Morelia!</strong></p>
-                <p>Growing up as the daughter of an entrepreneur, I was always helping with a family business&mdash;from sweeping the hair salon at ten to developing recipes for our paleter&iacute;a. Those experiences inspired me to help other small businesses bring their ideas to life.</p>
-                <p>Through Morelia Media LLC, I design websites, create social media content, and help set up point-of-sale systems.<strong> I enjoy working with business owners and making the technical side feel a little less overwhelming.</strong></p>
+
+            <!-- Bottom row: three photos with captions -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+
+                <!-- Hair salon -->
+                <figure>
+                    <img
+                            class="w-full h-56 object-cover rounded-xl"
+                            src="documentation/mayela_salon.JPG"
+                            alt="Inside our family’s hair salon"
+                            height="720"
+                            width="960"
+                    />
+
+                    <figcaption class="mt-4">
+                        <h3 class="text-lg font-bold mb-2">
+                            Where I started
+                        </h3>
+                        <p class="leading-relaxed">
+                            Helping with the family salon from age ten.
+                        </p>
+                    </figcaption>
+                </figure>
+
+                <!-- Paleta Paradise -->
+                <figure>
+                    <img
+                            class="w-full h-56 object-cover rounded-xl"
+                            src="documentation/paleta_paradise_banner.jpg"
+                            alt="Paleta Paradise storefront and banner"
+                            height="1008"
+                            width="1344"
+                    />
+
+                    <figcaption class="mt-4">
+                        <h3 class="text-lg font-bold mb-2">
+                            Hands-on business experience
+                        </h3>
+                        <p class="leading-relaxed">
+                            Learning what goes into running a small business.
+                        </p>
+                    </figcaption>
+                </figure>
+
+                <!-- Paletería review -->
+                <figure>
+                    <img
+                            class="w-full h-56 object-contain bg-purple-100 rounded-xl"
+                            src="documentation/paletas_review.png"
+                            alt="Customer review of our family paletería, with a photo of popsicles"
+                            height="265"
+                            width="206"
+                    />
+
+                    <figcaption class="mt-4">
+                        <h3 class="text-lg font-bold mb-2">
+                            Creativity in practice
+                        </h3>
+                        <p class="leading-relaxed">
+                            Developing recipes for our family paletería.
+                            Pictured above: a customer’s review of the business.
+                        </p>
+                    </figcaption>
+                </figure>
+
             </div>
+
         </div>
     </section>
-
 
     <section class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-32 my-16">
 
@@ -156,12 +253,129 @@
 
 
 
-  <p> Portfolio section here</p>
-  <p> image left, text right add button that links to the topic</p>
-  <p> image right, text left add button that links to the topic</p>
-  <p> image left, text right add button that links to the topic</p>
+ <h1 class="ext-heading tracking-tighter text-3xl md:text-5xl font-bold my-6"> Portfolio</h1>
 
-  <p> footer</p>
+    <section>
+        <div class="bg-neutral-primary-soft flex flex-row items-center w-full w-full border border-default rounded-base shadow-xs overflow-hidden mb-6">
+
+            <!-- Image on the left -->
+            <a href="#" class="w-1/2 shrink-0">
+
+                <img src="documentation/asl_socials.png"
+                     height="1626"
+                     width="2670"/>
+
+            </a>
+
+            <!-- Heading and button on the right -->
+            <div class="w-1/2 p-6 text-center">
+                <a href="#">
+                    <h5 class="mb-6 text-2xl font-semibold tracking-tight text-heading">
+                        Social Media
+                    </h5>
+                    <p>Content ideas, simple campaign concepts, and visuals that help local businesses show up consistently online.</p>
+                </a>
+
+                <a href="#" class="inline-flex items-center text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
+                    See Social Media Work
+                    <svg class="w-4 h-4 ms-1.5 rtl:rotate-180 -me-0.5"
+                         aria-hidden="true"
+                         xmlns="http://www.w3.org/2000/svg"
+                         width="24" height="24"
+                         fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="bg-neutral-primary-soft flex flex-row-reverse items-center w-full w-full border border-default rounded-base shadow-xs overflow-hidden mb-6 ">
+
+            <!-- Image on the left -->
+            <a href="#" class="w-1/2 shrink-0">
+
+                <img src="documentation/yb_website.png" height="1626" width="2670"/>
+
+            </a>
+
+
+            <!-- Heading and button on the right -->
+            <div class="w-1/2 p-6 text-center">
+                <a href="#">
+                    <h5 class="mb-6 text-2xl font-semibold tracking-tight text-heading">
+                        Websites
+                    </h5>
+                    <p>Clean, mobile friendly websites that explain what you do, build trust, and make it easy for customers to contact you. </p>
+
+                <a href="#" class="inline-flex items-center text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
+                    See Website Work
+                    <svg class="w-4 h-4 ms-1.5 rtl:rotate-180 -me-0.5"
+                         aria-hidden="true"
+                         xmlns="http://www.w3.org/2000/svg"
+                         width="24" height="24"
+                         fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    </section>
+
+
+    <section>
+        <div class="bg-neutral-primary-soft flex flex-row items-center w-full w-full border border-default rounded-base shadow-xs overflow-hidden mb-6">
+
+            <!-- Image on the left -->
+            <a href="#" class="w-1/2 shrink-0">
+
+                <img src="documentation/herbs_in_square_shop.png" height="518" width="1806"/></a>
+
+            <!-- Heading and button on the right -->
+            <div class="w-1/2 p-6 text-center">
+                <a href="#">
+                    <h5 class="mb-6 text-2xl font-semibold tracking-tight text-heading">
+                        Square
+                    </h5>
+                    <p> Square online set up that helps customers see what to buy, plus hands on teaching and coaching.</p>
+                </a>
+
+                <a href="#" class="inline-flex items-center text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
+                    See Square Work
+                    <svg class="w-4 h-4 ms-1.5 rtl:rotate-180 -me-0.5"
+                         aria-hidden="true"
+                         xmlns="http://www.w3.org/2000/svg"
+                         width="24" height="24"
+                         fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
 
   <footer class="text-center bg-purple-400 ">Morelia Media LLC |Portfolio</footer>
 
