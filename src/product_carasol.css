@@ -1,0 +1,10 @@
+@keyframes slideImages {
+  0%, 25% { transform: translateX(0%); }
+  33%, 58% { transform: translateX(-25%); }
+  66%, 91% { transform: translateX(-50%); }
+  100% { transform: translateX(-75%); }
+}
+
+.animate-carousel {
+  animation: slideImages 12s infinite cubic-bezier(0.4, 0, 0.2, 1);
+}

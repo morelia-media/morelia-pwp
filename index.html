@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite App</title>
   <link href="/src/index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -23,44 +24,58 @@
     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
       <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
         <li><a href="#" class="block py-2 px-3 text-white bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0" aria-current="page">Welcome</a></li>
-        <li><a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">About Me</a></li>
-        <li><a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Portfolio</a></li>
-        <li><a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Pricing</a></li>
-        <li><a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Contact</a></li>
-        <li><a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Social Handles</a></li>
+        <li><a href="#about" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">About Me</a></li>
+        <li><a href="#work" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Portfolio</a></li>
+        <li><a href="#pricing" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Pricing</a></li>
+        <li><a href="#contact" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Contact</a></li>
+        <li><a href="#socials" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Social Handles</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <!-- Page Content (padded to clear the fixed navbar) -->
-<main class="pt-36 px-4 text-center max-w-screen-xl mx-auto"><h1 class="text-heading tracking-tighter text-3xl md:text-5xl font-bold my-6">Morelia Media LLC Portfolio</h1>
+<main class=" pt-36 px-4 text-center max-w-screen-xl mx-auto ">
+
+    <h1 class="text-heading tracking-tighter text-3xl md:text-5xl font-bold my-6">Morelia Media LLC Portfolio</h1>
 
 
   <section class="bg-neutral-primary">
     <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
       <div class="bg-neutral-secondary-soft border border-default rounded-base p-8 md:p-12 mb-8">
-        <h1 class="text-heading tracking-tighter text-3xl md:text-5xl font-bold my-6">Hello, <br>I'm Morelia, a website designer helping local businesses show up online.</h1>
+        <h1 class="text-heading tracking-tighter text-3xl md:text-5xl font-bold my-6">Hello, <br>I'm Morelia, a website designer helping local businesses shine online.</h1>
 
         <button type="button" class="inline-flex items-center justify-center text-white bg-purple-500 hover:bg-brand-strong box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium rounded-base text-base px-5 py-3 focus:outline-none">
-          Explore my Portfolio
-
-        </button>
+            <!-- Notice how we use an <a> tag instead of a <button> tag so we can use href -->
+            <a href="#work" class="inline-block px-6 py-3 text-white bg-brand rounded-md hover:bg-brand-strong font-medium transition-colors">
+                Explore my Portfolio
+            </a></button>
       </div>
-      <div class="grid md:grid-cols-2 gap-8">
-          </a>
-        </div>
+        <div class="grid md:grid-cols-2 gap-8"> </div>
       </div>
-    </div>
   </section>
 
 
 
- <img class=" pt-5 rounded-2xl" src="documentation/Morelia_Builds_the_Web.png" height="887" width="1774" alt="Morelia builds the web image" />
-  <h1 class=" pt-10 text-center"> Websites|Social Media| Square</h1>
+
+    <img
+            src="documentation/morelia-media-welcome-1440.webp"
+            srcset="documentation/morelia-media-welcome-768.webp 768w,
+          documentation/morelia-media-welcome-1440.webp 1440w"
+            sizes="(max-width: 1440px) 100vw, 1440px"
+            width="1440"
+            height="720"
+            class="w-full h-auto"
+            fetchpriority="high"
+            alt="Comic illustration of Morelia building a website at a two-monitor desk"
+    >
+
+
+    <h1 class=" pt-10 text-center"> Websites     |     Social Media     |     E-commerce</h1>
 
 
 
+<div id="about">
     <h1 class="text-heading tracking-tighter text-3xl md:text-5xl font-bold my-6">
         About Me
     </h1>
@@ -183,7 +198,7 @@
             </h5>
 
             <p class="text-body">
-                I have worked in construction (installing insulation and dry wall), retail (sales and setting up point of sale), the service industry (setting up hair salon operations),
+                I have worked in construction (installing insulation and dry wall), retail (sales and setting up point of sale), the service industry (setting up hair salon and restaurant operations),
                 and engineering (manufacturing and laboratory environments). I have experience creating content for several
                 industries, including safety signage for laboratories,
                 quality guidelines for manufacturing operations, training
@@ -251,11 +266,13 @@
 
     </section>
 
+</div>
+
 
 
  <h1 class="ext-heading tracking-tighter text-3xl md:text-5xl font-bold my-6"> Portfolio</h1>
-
-    <section>
+<section id="work">
+        <section>
         <div class="bg-neutral-primary-soft flex flex-row items-center w-full w-full border border-default rounded-base shadow-xs overflow-hidden mb-6">
 
             <!-- Image on the left -->
@@ -276,7 +293,7 @@
                     <p>Content ideas, simple campaign concepts, and visuals that help local businesses show up consistently online.</p>
                 </a>
 
-                <a href="#" class="inline-flex items-center text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
+                <a href="https://www.youtube.com/@MoreliaMedia" class="inline-flex items-center text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
                     See Social Media Work
                     <svg class="w-4 h-4 ms-1.5 rtl:rotate-180 -me-0.5"
                          aria-hidden="true"
@@ -297,7 +314,7 @@
 
 
 
-    <section>
+        <section>
         <div class="bg-neutral-primary-soft flex flex-row-reverse items-center w-full w-full border border-default rounded-base shadow-xs overflow-hidden mb-6 ">
 
             <!-- Image on the left -->
@@ -316,20 +333,20 @@
                     </h5>
                     <p>Clean, mobile friendly websites that explain what you do, build trust, and make it easy for customers to contact you. </p>
 
-                <a href="#" class="inline-flex items-center text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
-                    See Website Work
-                    <svg class="w-4 h-4 ms-1.5 rtl:rotate-180 -me-0.5"
-                         aria-hidden="true"
-                         xmlns="http://www.w3.org/2000/svg"
-                         width="24" height="24"
-                         fill="none" viewBox="0 0 24 24">
-                        <path stroke="currentColor"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M19 12H5m14 0-4 4m4-4-4-4"/>
-                    </svg>
-                </a>
+<!--                <a href="#" class="inline-flex items-center text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">-->
+<!--                    See Website Work-->
+<!--                    <svg class="w-4 h-4 ms-1.5 rtl:rotate-180 -me-0.5"-->
+<!--                         aria-hidden="true"-->
+<!--                         xmlns="http://www.w3.org/2000/svg"-->
+<!--                         width="24" height="24"-->
+<!--                         fill="none" viewBox="0 0 24 24">-->
+<!--                        <path stroke="currentColor"-->
+<!--                              stroke-linecap="round"-->
+<!--                              stroke-linejoin="round"-->
+<!--                              stroke-width="2"-->
+<!--                              d="M19 12H5m14 0-4 4m4-4-4-4"/>-->
+<!--                    </svg>-->
+<!--                </a>-->
             </div>
 
         </div>
@@ -337,50 +354,484 @@
 
 
 
-    </section>
-
-
-    <section>
+        <section>
         <div class="bg-neutral-primary-soft flex flex-row items-center w-full w-full border border-default rounded-base shadow-xs overflow-hidden mb-6">
 
             <!-- Image on the left -->
-            <a href="#" class="w-1/2 shrink-0">
+            <!-- E-Commerce Product Slider -->
+            <div class="w-full max-w-sm mx-auto mt-8 border border-gray-200 rounded-lg shadow-sm bg-gray-50 p-4">
 
-                <img src="documentation/herbs_in_square_shop.png" height="518" width="1806"/></a>
+                <h3 class="mb-4 text-lg font-bold text-center text-gray-900">Your Products Here</h3>
+
+                <!-- Outer window (hides everything outside its borders) -->
+                <div class="relative w-full overflow-hidden rounded-md h-72">
+
+                    <!-- Inner sliding track (400% width to hold 4 equal images) -->
+                    <div class="flex w-[400%] h-full animate-carousel">
+
+                        <!-- 1. Candle -->
+                        <div class="flex-shrink-0 w-1/4 h-full relative">
+                            <img src="https://images.unsplash.com/photo-1602928321679-560bb453f190?auto=format&fit=crop&w=600&q=80" alt="Stylized Candle" class="object-cover w-full h-full" />
+                            <div class="absolute bottom-4 left-4 bg-white/90 px-3 py-1 rounded shadow-sm text-sm font-bold text-gray-800">Essential Oils</div>
+                        </div>
+
+                        <!-- 2. Shampoo -->
+                        <div class="flex-shrink-0 w-1/4 h-full relative">
+                            <img src="https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=600&q=80" alt="Stylized Shampoo" class="object-cover w-full h-full" />
+                            <div class="absolute bottom-4 left-4 bg-white/90 px-3 py-1 rounded shadow-sm text-sm font-bold text-gray-800">Botanical Care</div>
+                        </div>
+
+                        <!-- 3. Blanket -->
+                        <div class="flex-shrink-0 w-1/4 h-full relative">
+                            <img src="https://images.unsplash.com/photo-1580301762395-21ce84d00bc6?auto=format&fit=crop&w=600&q=80" alt="Stylized Blanket" class="object-cover w-full h-full" />
+                            <div class="absolute bottom-4 left-4 bg-white/90 px-3 py-1 rounded shadow-sm text-sm font-bold text-gray-800">Woven Blankets</div>
+                        </div>
+
+                        <!-- 4. Candle (Clone of Image 1 for the seamless loop transition) -->
+                        <div class="flex-shrink-0 w-1/4 h-full relative">
+                            <img src="https://images.unsplash.com/photo-1602928321679-560bb453f190?auto=format&fit=crop&w=600&q=80" alt="Stylized Candle" class="object-cover w-full h-full" />
+                            <div class="absolute bottom-4 left-4 bg-white/90 px-3 py-1 rounded shadow-sm text-sm font-bold text-gray-800">Soy Candles</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
             <!-- Heading and button on the right -->
             <div class="w-1/2 p-6 text-center">
                 <a href="#">
                     <h5 class="mb-6 text-2xl font-semibold tracking-tight text-heading">
-                        Square
+                        E-commerce
                     </h5>
-                    <p> Square online set up that helps customers see what to buy, plus hands on teaching and coaching.</p>
+                    <p> E-commerce online set up that helps customers see what to buy, plus hands on teaching and coaching setting up card payments and shipping.</p>
                 </a>
 
-                <a href="#" class="inline-flex items-center text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
-                    See Square Work
-                    <svg class="w-4 h-4 ms-1.5 rtl:rotate-180 -me-0.5"
-                         aria-hidden="true"
-                         xmlns="http://www.w3.org/2000/svg"
-                         width="24" height="24"
-                         fill="none" viewBox="0 0 24 24">
-                        <path stroke="currentColor"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M19 12H5m14 0-4 4m4-4-4-4"/>
-                    </svg>
-                </a>
+<!--                <a href="#" class="inline-flex items-center text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">-->
+<!--                    See E-Commerce Work-->
+<!--                    <svg class="w-4 h-4 ms-1.5 rtl:rotate-180 -me-0.5"-->
+<!--                         aria-hidden="true"-->
+<!--                         xmlns="http://www.w3.org/2000/svg"-->
+<!--                         width="24" height="24"-->
+<!--                         fill="none" viewBox="0 0 24 24">-->
+<!--                        <path stroke="currentColor"-->
+<!--                              stroke-linecap="round"-->
+<!--                              stroke-linejoin="round"-->
+<!--                              stroke-width="2"-->
+<!--                              d="M19 12H5m14 0-4 4m4-4-4-4"/>-->
+<!--                    </svg>-->
+<!--                </a>-->
             </div>
 
+
+
+        </div>
+
+    </section>
+
+    </section>
+
+    <h1 class="ext-heading tracking-tighter text-4xl md:text-5xl font-bold my-6"> Pricing </h1>
+
+
+    <h2 class="ext-heading tracking-tighter text-3xl md:text-4xl font-bold my-6 text-left"> Social Media and Video</h2>
+<section id="pricing">
+    <card class="">
+        <div class="mx-auto my-6 max-w-4xl overflow-hidden rounded-xl border border-purple-500 bg-white shadow-lg  ">
+            <table class="w-full border-collapse text-left text-lg text-gray-700 ">
+                <thead class="border-b border-purple-500 bg-purple-500 text-md font-semibold uppercase tracking-wider text-white   ">
+                <tr>
+                    <th scope="col" class="border-r border-purple-500 px-6 py-4 ">Service</th>
+                    <th scope="col" class="border-r border-purple-500 px-6 py-4 ">What's Included</th>
+                    <th scope="col" class="px-6 py-4">Price Starting At</th>
+                </tr>
+                </thead>
+                <tbody class="divide-y divide-purple-500 ">
+                <tr class=" ">
+                    <td class="border-r border-purple-500 px-6 py-4 font-semibold text-gray-900  ">
+                        Short Video Shoot
+                    </td>
+                    <td class="border-r border-purple-500 px-6 py-4 ">
+                        Up to 2 hours on site and one 1-hour planning or review meeting. Editing is separate.
+                    </td>
+                    <td class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 ">
+                        $255
+                    </td>
+                </tr>
+                <tr class=" ">
+                    <td class="border-r border-purple-500 px-6 py-4 font-semibold text-gray-900  ">
+                        Half-day Video Shoot
+                    </td>
+                    <td class="border-r border-purple-500 px-6 py-4 ">
+                        Up to 4 hours on site, plus prep and local travel. Editing is separate.
+                    </td>
+                    <td class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 ">
+                       $510
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="border-r border-purple-500 px-6 py-4 font-semibold text-gray-900  ">
+                        Short Video Editing
+                    </td>
+                    <td class="border-r border-purple-500 px-6 py-4 ">
+                        One short video, up to  60seconds.
+                    </td>
+                    <td class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 ">
+                        $170
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="border-r border-purple-500 px-6 py-4 font-semibold text-gray-900  ">
+                        Video Editing
+                    </td>
+                    <td class="border-r border-purple-500 px-6 py-4 ">
+                        One 1-2 minute video with one round of revisions
+                    </td>
+                    <td class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 ">
+                        $270
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="border-r border-purple-500 px-6 py-4 font-semibold text-gray-900  ">
+                        Event Photos
+                    </td>
+                    <td class="border-r border-purple-500 px-6 py-4 ">
+                        Up to 40 unedited photos, added to a video shoot.
+                    </td>
+                    <td class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 ">
+                        $75
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="border-r border-purple-500 px-6 py-4 font-semibold text-gray-900  ">
+                        Content Planning
+                    </td>
+                    <td class="border-r border-purple-500 px-6 py-4 ">
+                        Monthly content ideas and posting calendar.
+                    </td>
+                    <td class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 ">
+                        $255/month
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="border-r border-purple-500 px-6 py-4 font-semibold text-gray-900  ">
+                       Scheduling and Posting
+                    </td>
+                    <td class="border-r border-purple-500 px-6 py-4 ">
+                        Monthly post scheduling and publishing
+                    </td>
+                    <td class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 ">
+                        $340/month
+                    </td>
+                </tr>
+
+                <h1 class="ext-heading tracking-tighter text-2xl md:text-2xl font-bold my-6"> Social Media Estimates are Free. Contact us to get a free estimate!</h1>
+
+                <tr class=" ">
+                    <td class="border-r border-purple-500 px-6 py-4 font-semibold text-gray-900  ">
+                        Drone Footage Add-On
+                    </td>
+                    <td class="border-r border-purple-500 px-6 py-4 ">
+                        Up to 1 hour of drone filming during a booked shoot, with the best clips delivered. Editing into a finished video is separate.
+                    </td>
+                    <td class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 ">
+                        $250
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </card>
+</section>
+
+
+    <section>
+        <card class="">
+            <div class="mx-auto my-6 max-w-4xl overflow-hidden rounded-xl border border-purple-500 bg-white shadow-lg  ">
+                <table class="w-full border-collapse text-left text-lg text-gray-700 ">
+                    <thead class="border-b border-purple-500 bg-purple-500 text-md font-semibold uppercase tracking-wider text-white   ">
+                    <tr>
+                        <th scope="col" class="border-r border-purple-500 px-6 py-4 ">Destination</th>
+                        <th scope="col" class="border-r border-purple-500 px-6 py-4 ">Fee Per Trip</th>
+                    </tr>
+                    </thead>
+                    <tbody class="divide-y divide-purple-500 ">
+                    <tr class=" ">
+                        <td class="border-r border-purple-500 px-6 py-4 font-semibold text-gray-900  ">
+                            Rio Rancho
+                        </td>
+                        <td class="border-r border-purple-500 px-6 py-4 ">
+                            $45
+                        </td>
+                    </tr>
+                    <tr class=" ">
+                        <td class="border-r border-purple-500 px-6 py-4 font-semibold text-gray-900  ">
+                            Santa Fe
+                        </td>
+                        <td class="border-r border-purple-500 px-6 py-4 ">
+                            $170
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="border-r border-purple-500 px-6 py-4 font-semibold text-gray-900  ">
+                            Other New Mexico Locations
+                        </td>
+                        <td class="border-r border-purple-500 px-6 py-4 ">
+                            Quoted by location.
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </card>
+    </section>
+
+
+
+    <h2 class="ext-heading tracking-tighter text-3xl md:text-4xl font-bold my-6 text-left"> Websites</h2>
+
+    <section>
+        <card class="">
+            <div class="mx-auto my-6 max-w-4xl overflow-hidden rounded-xl border border-purple-500 bg-white shadow-lg  ">
+                <table class="w-full border-collapse text-left text-lg text-gray-700 ">
+                    <thead class="border-b border-purple-500 bg-purple-500 text-md font-semibold uppercase tracking-wider text-white   ">
+                    <tr>
+                        <th scope="col" class="border-r border-purple-500 px-6 py-4 ">Service</th>
+                        <th scope="col" class="border-r border-purple-500 px-6 py-4 ">What's Included</th>
+                        <th scope="col" class="px-6 py-4">Price Starting At</th>
+                    </tr>
+                    </thead>
+                    <tbody class="divide-y divide-purple-500 ">
+                    <tr class=" ">
+                        <td class="border-r border-purple-500 px-6 py-4 font-semibold text-gray-900  ">
+                            Domain Setup
+                        </td>
+                        <td class="border-r border-purple-500 px-6 py-4 ">
+                            Help buying a domain and connecting it to your website.
+                        </td>
+                        <td class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 ">
+                            $85
+                        </td>
+                    </tr>
+                    <tr class=" ">
+                        <td class="border-r border-purple-500 px-6 py-4 font-semibold text-gray-900  ">
+                            Basic Website
+                        </td>
+                        <td class="border-r border-purple-500 px-6 py-4 ">
+                            Up to 5 pages.
+                        </td>
+                        <td class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 ">
+                            $1,275
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="border-r border-purple-500 px-6 py-4 font-semibold text-gray-900  ">
+                            Website Care Plan
+                        </td>
+                        <td class="border-r border-purple-500 px-6 py-4 ">
+                            Monthly updates and maintenance.
+                        </td>
+                        <td class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 ">
+                            $130/month
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </card>
+    </section>
+
+
+    <h2 class="ext-heading tracking-tighter text-3xl md:text-3xl font-bold my-6 text-left"> E-Commerce</h2>
+    <section>
+        <card class="">
+            <div class="mx-auto my-6 max-w-4xl overflow-hidden rounded-xl border border-purple-500 bg-white shadow-lg  ">
+                <table class="w-full border-collapse text-left text-lg text-gray-700 ">
+                    <thead class="border-b border-purple-500 bg-purple-500 text-md font-semibold uppercase tracking-wider text-white   ">
+                    <tr>
+                        <th scope="col" class="border-r border-purple-500 px-6 py-4 ">Service</th>
+                        <th scope="col" class="border-r border-purple-500 px-6 py-4 ">What's Included</th>
+                        <th scope="col" class="px-6 py-4">Price Starting At</th>
+                    </tr>
+                    </thead>
+                    <tbody class="divide-y divide-purple-500 ">
+                    <tr class=" ">
+                        <td class="border-r border-purple-500 px-6 py-4 font-semibold text-gray-900  ">
+                            Card Payment Setup
+                        </td>
+                        <td class="border-r border-purple-500 px-6 py-4 ">
+                            Help connecting buisness operations to accept card payments.
+                        </td>
+                        <td class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 ">
+                            $85
+                        </td>
+                    </tr>
+                    <tr class=" ">
+                        <td class="border-r border-purple-500 px-6 py-4 font-semibold text-gray-900  ">
+                            Online Store
+                        </td>
+                        <td class="border-r border-purple-500 px-6 py-4 ">
+                           Store setup for up to 20 products, with card payments.
+                        </td>
+                        <td class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 ">
+                            $2,125
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </card>
+    </section>
+
+
+
+
+    <h1 class="ext-heading tracking-tighter text-4xl md:text-5xl font-bold my-6"> Contact </h1>
+
+    <img src="documentation/Warm greige studio headshot.png" alt="Profile Headshot" class="object-cover w-40 h-40 mx-auto border-4 border-white rounded-full shadow-md" />
+
+    <section id="contact" class="bg-neutral-primary-soft flex flex-col items-center gap-6 w-full max-w-2xl mx-auto border border-default rounded-base shadow-xs overflow-hidden mb-6 p-8">
+
+        <div>
+            <div class="direct-contact text-center">
+                <p data-i18n="directEmailLabel" class="text-gray-600">Prefer email?</p>
+                <a href="mailto:hello@moreliamedia.com" class="font-semibold text-gray-900 hover:underline">hello@moreliamedia.com</a>
+            </div>
+        </div>
+
+        <div class="contact-panel w-full">
+            <p class="mb-6 text-center text-gray-600">Tell me what your business needs and what you're hoping to make. I’ll help you figure out the next step.</p>
+
+            <!-- Added flex flex-col and gap-4 to stack the form fields -->
+            <form id="contact-form" class="flex flex-col gap-5">
+
+                <!-- Wrapped labels in flex-col to stack the title above the input box -->
+                <label class="flex flex-col gap-1 text-sm font-medium text-gray-700">
+                    <span data-i18n="formName">Name</span>
+                    <!-- Added rounded-lg, border, and padding classes -->
+                    <input id="name" name="name" type="text" autocomplete="name" required
+                           class="w-full px-4 py-2 text-gray-900 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-medium" />
+                </label>
+
+                <label class="flex flex-col gap-1 text-sm font-medium text-gray-700">
+                    <span data-i18n="formEmail">Email</span>
+                    <input id="email" name="email" type="email" autocomplete="email" required
+                           class="w-full px-4 py-2 text-gray-900 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-medium" />
+                </label>
+
+                <label class="flex flex-col gap-1 text-sm font-medium text-gray-700">
+                    <span data-i18n="formBusiness">Business name</span>
+                    <input id="business" name="business" type="text" autocomplete="organization"
+                           class="w-full px-4 py-2 text-gray-900 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-medium" />
+                </label>
+
+                <label class="flex flex-col gap-1 text-sm font-medium text-gray-700">
+                    <span data-i18n="formMessage">What are you working on?</span>
+                    <!-- Textarea needs the same border and rounding classes -->
+                    <textarea id="message" name="message" rows="5" required
+                              class="w-full px-4 py-2 text-gray-900 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-medium"></textarea>
+                </label>
+
+                <button class="inline-flex justify-center items-center mt-2 text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-lg px-4 py-2.5 focus:outline-none" type="submit">
+                    <span data-i18n="formSubmit">START A CONVERSATION</span> ↗
+                </button>
+
+                <p class="text-sm text-center text-gray-500 form-note" data-i18n="formNote">Your message will be addressed to hello@moreliamedia.com.</p>
+            </form>
         </div>
     </section>
 
 
-  <footer class="text-center bg-purple-400 ">Morelia Media LLC |Portfolio</footer>
+
+    <h1 class="ext-heading tracking-tighter text-3xl md:text-5xl font-bold my-6"> Social Handles</h1>
+    <h2 class=" "> Follow me and stay posted on my projects.</h2>
+    <!-- Wrapper container to handle the 2-column layout and spacing -->
+    <div id= "socials" class="grid grid-cols-1 gap-6 sm:grid-cols-2 max-w-4xl mx-auto py-8">
+
+        <!-- GitHub Card -->
+        <div class="flex max-w-sm gap-4 p-5 bg-white border border-gray-200 rounded-lg shadow-sm">
+            <div class="flex items-center justify-center flex-shrink-0 w-16 h-16">
+                <span class="text-6xl font-bold text-gray-800">
+                    <i class="fa-brands fa-square-github" style="color: rgb(173, 70, 255);"></i>
+                </span>
+            </div>
+            <div class="flex flex-col w-full gap-3">
+                <div class="flex flex-col">
+                    <h3 class="text-xl font-bold text-gray-900">GitHub</h3>
+                    <p class="text-sm text-gray-500 truncate">[@morelia-media]</p>
+                </div>
+                <a href="https://github.com/morelia-media" target="_blank" rel="noopener noreferrer" class="inline-block w-full px-4 py-2 text-sm font-semibold text-center text-gray-900 transition-colors bg-white border border-gray-300 rounded-md hover:bg-gray-50">
+                    Visit profile
+                </a>
+            </div>
+        </div>
+
+        <!-- Facebook Card -->
+        <div class="flex max-w-sm gap-4 p-5 bg-white border border-gray-200 rounded-lg shadow-sm">
+            <div class="flex items-center justify-center flex-shrink-0 w-16 h-16 ">
+                <span class="text-6xl font-bold text-gray-800">
+                    <i class="fa-brands fa-square-facebook" style="color: rgb(173, 70, 255);"></i>
+                </span>
+            </div>
+            <div class="flex flex-col w-full gap-3">
+                <div class="flex flex-col">
+                    <h3 class="text-xl font-bold text-gray-900">Facebook</h3>
+                    <p class="text-sm text-gray-500 truncate">[@moreliamedia]</p>
+                </div>
+                <a href="https://www.facebook.com/moreliamedia" target="_blank" rel="noopener noreferrer" class="inline-block w-full px-4 py-2 text-sm font-semibold text-center text-gray-900 transition-colors bg-white border border-gray-300 rounded-md hover:bg-gray-50">
+                    Visit profile
+                </a>
+            </div>
+        </div>
+
+        <!-- Youtube Card -->
+        <div class="flex max-w-sm gap-4 p-5 bg-white border border-gray-200 rounded-lg shadow-sm">
+            <div class="flex items-center justify-center flex-shrink-0 w-16 h-16" >
+               <span class="text-6xl font-bold text-gray-800">
+                      <i class="fa-brands fa-square-youtube" style="color: rgb(173, 70, 255);"></i>
+                </span>
+            </div>
+            <div class="flex flex-col w-full gap-3">
+                <div class="flex flex-col">
+                    <h3 class="text-xl font-bold text-gray-900">Youtube</h3>
+                    <p class="text-sm text-gray-500 truncate">[@MoreliaMedia]</p>
+                </div>
+                <a href="https://www.youtube.com/@MoreliaMedia" target="_blank" rel="noopener noreferrer" class="inline-block w-full px-4 py-2 text-sm font-semibold text-center text-gray-900 transition-colors bg-white border border-gray-300 rounded-md hover:bg-gray-50">
+                    Visit profile
+                </a>
+            </div>
+        </div>
+
+        <!-- Instagram Card -->
+        <div class="flex max-w-sm gap-4 p-5 bg-white border border-gray-200 rounded-lg shadow-sm">
+            <div class="flex items-center justify-center flex-shrink-0 w-16 h-16 ">
+                <span class="text-6xl font-bold text-gray-800">
+                    <i class="fa-brands fa-instagram" style="color: rgb(173, 70, 255);"></i>
+                </span>
+            </div>
+            <div class="flex flex-col w-full gap-3">
+                <div class="flex flex-col">
+                    <h3 class="text-xl font-bold text-gray-900">Instagram</h3>
+                    <p class="text-sm text-gray-500 truncate">[@moreliamedia]</p>
+                </div>
+                <a href="https://www.instagram.com/moreliamedia" target="_blank" rel="noopener noreferrer" class="inline-block w-full px-4 py-2 text-sm font-semibold text-center text-gray-900 transition-colors bg-white border border-gray-300 rounded-md hover:bg-gray-50">
+                    Visit profile
+                </a>
+            </div>
+        </div>
+
+    </div>
 
 </main>
 
+<footer class="text-center bg-purple-400 ">Morelia Media LLC |Portfolio</footer>
 <script type="module" src="/src/main.js"></script>
 </body>
 </html>
