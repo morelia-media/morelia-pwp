@@ -120,13 +120,13 @@
 
             </div>
 
-            <!-- Bottom row: three photos with captions -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+            <!-- Bottom row: two photos with captions -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
 
                 <!-- Hair salon -->
                 <figure>
                     <img
-                            class="w-full h-56 object-cover rounded-xl"
+                            class="w-full h-56 md:h-auto md:aspect-2/1 object-cover rounded-xl"
                             src="documentation/mayela_salon.JPG"
                             alt="Inside our family’s hair salon"
                             height="720"
@@ -143,15 +143,24 @@
                     </figcaption>
                 </figure>
 
-                <!-- Paleta Paradise -->
+                <!-- Paleta Paradise Google review: wide card on desktop (md and up), taller card on mobile -->
                 <figure>
-                    <img
-                            class="w-full h-56 object-cover rounded-xl
-                            src="documentation/paleta_paradise_banner.jpg"
-                            alt="Paleta Paradise storefront and banner"
-                            height="1008"
-                            width="1344"
-                    />
+                    <picture>
+                        <source
+                                media="(min-width: 768px)"
+                                srcset="documentation/paleta-review-desktop.webp"
+                                width="1200"
+                                height="600"
+                        />
+                        <img
+                                class="w-full h-auto md:aspect-2/1 md:object-contain"
+                                src="documentation/paleta-review-mobile.webp"
+                                alt="Five-star Google review praising our homemade popsicles, snow cones and agua fresca, with a photo of three colorful popsicles"
+                                width="900"
+                                height="1017"
+                                loading="lazy"
+                        />
+                    </picture>
 
                     <figcaption class="mt-4">
                         <h3 class="text-lg font-bold mb-2">
@@ -159,27 +168,6 @@
                         </h3>
                         <p class="leading-relaxed">
                             Learning what goes into running a small business.
-                        </p>
-                    </figcaption>
-                </figure>
-
-                <!-- Paletería review -->
-                <figure>
-                    <img
-                            class="w-full h-56 object-contain bg-purple-100 rounded-xl"
-                            src="documentation/paletas_review.png"
-                            alt="Customer review of our family paletería, with a photo of popsicles"
-                            height="265"
-                            width="206"
-                    />
-
-                    <figcaption class="mt-4">
-                        <h3 class="text-lg font-bold mb-2">
-                            Creativity in practice
-                        </h3>
-                        <p class="leading-relaxed">
-                            Developing recipes for our family paletería.
-                            Pictured above: a customer’s review of the business.
                         </p>
                     </figcaption>
                 </figure>
