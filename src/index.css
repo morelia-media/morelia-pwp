@@ -15,3 +15,9 @@
     --color-fg-brand: var(--color-purple-500);
     --color-fg-brand-strong: var(--color-purple-500);
 }
+
+/* honeypot field: moved offscreen so people never see it, but bots still fill it in */
+.website {
+    position: absolute;
+    left: -9999px;
+}

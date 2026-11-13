@@ -146,7 +146,7 @@
                 <!-- Paleta Paradise -->
                 <figure>
                     <img
-                            class="w-full h-56 object-cover rounded-xl"
+                            class="w-full h-56 object-cover rounded-xl
                             src="documentation/paleta_paradise_banner.jpg"
                             alt="Paleta Paradise storefront and banner"
                             height="1008"
@@ -710,7 +710,7 @@
             <p class="mb-6 text-center text-gray-600">Tell me what your business needs and what you're hoping to make. I’ll help you figure out the next step.</p>
 
             <!-- Added flex flex-col and gap-4 to stack the form fields -->
-            <form id="contact-form" class="flex flex-col gap-5">
+            <form id="contact-form" class="flex flex-col gap-5" novalidate>
 
                 <!-- Wrapped labels in flex-col to stack the title above the input box -->
                 <label class="flex flex-col gap-1 text-sm font-medium text-gray-700">
@@ -718,25 +718,35 @@
                     <!-- Added rounded-lg, border, and padding classes -->
                     <input id="name" name="name" type="text" autocomplete="name" required
                            class="w-full px-4 py-2 text-gray-900 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-medium" />
+                    <p id="nameError" class="hidden mt-1 text-sm text-red-600"></p>
                 </label>
 
                 <label class="flex flex-col gap-1 text-sm font-medium text-gray-700">
                     <span data-i18n="formEmail">Email</span>
                     <input id="email" name="email" type="email" autocomplete="email" required
                            class="w-full px-4 py-2 text-gray-900 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-medium" />
+                    <p id="emailError" class="hidden mt-1 text-sm text-red-600"></p>
                 </label>
 
                 <label class="flex flex-col gap-1 text-sm font-medium text-gray-700">
                     <span data-i18n="formBusiness">Business name</span>
                     <input id="business" name="business" type="text" autocomplete="organization"
                            class="w-full px-4 py-2 text-gray-900 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-medium" />
+                    <p id="businessError" class="hidden mt-1 text-sm text-red-600"></p>
                 </label>
+
+                <!-- honeypot: hidden offscreen by the .website rule in src/index.css; only bots fill it in -->
+                <div class="website" aria-hidden="true">
+                    <label for="website" class="block text-sm font-medium">Website</label>
+                    <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+                </div>
 
                 <label class="flex flex-col gap-1 text-sm font-medium text-gray-700">
                     <span data-i18n="formMessage">What are you working on?</span>
                     <!-- Textarea needs the same border and rounding classes -->
                     <textarea id="message" name="message" rows="5" required
                               class="w-full px-4 py-2 text-gray-900 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-medium"></textarea>
+                    <p id="messageError" class="hidden mt-1 text-sm text-red-600"></p>
                 </label>
 
                 <button class="inline-flex justify-center items-center mt-2 text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-lg px-4 py-2.5 focus:outline-none" type="submit">
@@ -744,6 +754,8 @@
                 </button>
 
                 <p class="text-sm text-center text-gray-500 form-note" data-i18n="formNote">Your message will be addressed to hello@moreliamedia.com.</p>
+
+                <div class="hidden p-4 my-4 text-sm rounded-lg" id="status" role="alert"></div>
             </form>
         </div>
     </section>
