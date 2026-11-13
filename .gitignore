@@ -3,3 +3,7 @@
 node_modules
 dist
 .env
+
+# original review PNGs (site uses the compressed .webp versions)
+documentation/Google Review Card with Colorful PopsiclesD.png
+documentation/Google Review Featuring Colorful Popsicles.png
